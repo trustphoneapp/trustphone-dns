@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="TrustPhone DNS — industrial-grade local DNS firewall for Android. Block ads, trackers, and threats before they load." />
-  <title>TrustPhone DNS — Industrial DNS Firewall</title>
+  <meta name="description" content="TrustPhone DNS — local DNS firewall for Android. Block ads, trackers, and malware on-device. Optional DoH. No account required." />
+  <meta property="og:title" content="TrustPhone DNS — Ad & Tracker Blocker" />
+  <meta property="og:description" content="On-device DNS firewall for Android. Block ads and trackers before they load. Privacy-first, no account." />
+  <meta property="og:url" content="https://trustphonedns.com/" />
+  <title>TrustPhone DNS — Ad & Tracker Blocker for Android</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=IBM+Plex+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
@@ -22,7 +26,8 @@
       </a>
       <nav class="nav-links">
         <a href="#features">Features</a>
-        <a href="#engine">Engine</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#how">How it works</a>
         <a href="#privacy">Privacy</a>
         <a href="#download" class="btn btn-sm">Get App</a>
       </nav>
@@ -32,17 +37,17 @@
   <main>
     <section class="hero">
       <div class="hero-content">
-        <p class="eyebrow">INDUSTRIAL DNS FIREWALL · ANDROID</p>
-        <h1>Stop threats at the <span class="gradient-text">DNS layer</span> — before pages load.</h1>
-        <p class="hero-sub">TrustPhone DNS is a local-only VPN DNS filter with bloom-accelerated blocklists, policy profiles, threat intelligence, and zero remote browsing inspection.</p>
+        <p class="eyebrow">LOCAL DNS FIREWALL · ANDROID 8+</p>
+        <h1>Block ads &amp; trackers <span class="gradient-text">before they load</span></h1>
+        <p class="hero-sub">TrustPhone DNS filters DNS queries on your phone using a local VPN tunnel. Blocklists, policy profiles, and logs stay on your device — no account, no cloud browsing history.</p>
         <div class="hero-actions">
-          <a href="#download" class="btn btn-primary">Deploy Protection</a>
-          <a href="#engine" class="btn btn-ghost">View Architecture</a>
+          <a href="#download" class="btn btn-primary">Get on Google Play</a>
+          <a href="#how" class="btn btn-ghost">How it works</a>
         </div>
         <div class="hero-stats">
-          <div class="stat"><span class="stat-val">225K+</span><span class="stat-label">Blocklist domains</span></div>
-          <div class="stat"><span class="stat-val">&lt;2ms</span><span class="stat-label">Decision latency</span></div>
-          <div class="stat"><span class="stat-val">100%</span><span class="stat-label">On-device</span></div>
+          <div class="stat"><span class="stat-val">200K+</span><span class="stat-label">Domains after list update</span></div>
+          <div class="stat"><span class="stat-val">DNS-only</span><span class="stat-label">UDP port 53 — not a full VPN</span></div>
+          <div class="stat"><span class="stat-val">Off</span><span class="stat-label">Telemetry by default</span></div>
         </div>
       </div>
       <div class="hero-visual">
@@ -53,9 +58,10 @@
           <div class="core-icon">🛡</div>
         </div>
         <div class="hud-panel">
-          <div class="hud-row"><span>STATUS</span><span class="ok">PROTECTED</span></div>
-          <div class="hud-row"><span>RESOLVER</span><span>1.1.1.1</span></div>
-          <div class="hud-row"><span>ENGINE</span><span>BLOOM + SQLITE</span></div>
+          <div class="hud-row"><span>PACKAGE</span><span>com.trustphone.dns</span></div>
+          <div class="hud-row"><span>VERSION</span><span>3.0.1</span></div>
+          <div class="hud-row"><span>ENGINE</span><span class="ok">BLOOM → SQLITE</span></div>
+          <div class="hud-row"><span>RESOLVER</span><span>1.1.1.1 · DoH opt-in</span></div>
           <div class="hud-bar"><div class="hud-fill"></div></div>
         </div>
       </div>
@@ -63,54 +69,175 @@
 
     <section id="features" class="section">
       <div class="section-head">
-        <p class="eyebrow">CAPABILITY MATRIX</p>
-        <h2>Feature-by-feature control plane</h2>
+        <p class="eyebrow">WHAT THE APP DOES</p>
+        <h2>Built for real DNS filtering — not marketing fluff</h2>
+        <p class="section-sub">Every feature below is implemented in the current v3.0.1 codebase.</p>
       </div>
       <div class="feature-grid">
-        <article class="card"><h3>DNS Firewall</h3><p>Local VpnService intercepts UDP/53 only. HTTPS and app traffic bypass the tunnel.</p></article>
-        <article class="card"><h3>Shield Lists</h3><p>Ads, trackers, malware, phishing, adult, gambling — toggled independently with live counts.</p></article>
-        <article class="card"><h3>Policy Center</h3><p>Child, Teen, Family, Work, Travel profiles with configurable risk thresholds.</p></article>
-        <article class="card"><h3>Threat Center</h3><p>Typosquat detection, homograph indicators, DNSSEC status, and risk scoring.</p></article>
-        <article class="card"><h3>Per-App Rules</h3><p>Bypass or force-block DNS per installed application (Pro).</p></article>
-        <article class="card"><h3>Resolver Health</h3><p>DoH fallback, latency metrics, failover history, and backup resolver chain.</p></article>
-        <article class="card"><h3>Family Safety</h3><p>Parental profile enforcement with adult/gambling domain intelligence.</p></article>
-        <article class="card"><h3>Privacy Center</h3><p>Telemetry opt-in only. Export activity logs as CSV from your device.</p></article>
+        <article class="card">
+          <span class="badge badge-free">Free</span>
+          <h3>DNS Firewall</h3>
+          <p>Local VpnService routes only your DNS resolver IP (/32) into a TUN interface. Intercepts UDP port 53 — HTTPS and app traffic are not inspected.</p>
+        </article>
+        <article class="card">
+          <span class="badge badge-free">Free</span>
+          <h3>Shield Lists</h3>
+          <p>Toggle ads, trackers, and malware. Lists download from HaGeZi, Steven Black, URLhaus, and Phishing Army — cached on device with live counts.</p>
+        </article>
+        <article class="card">
+          <span class="badge badge-free">Free</span>
+          <h3>Policy Profiles</h3>
+          <p>Default, Child, Teen, Family, Work, and Travel profiles with adjustable risk threshold. Local reputation scoring blocks suspicious domains.</p>
+        </article>
+        <article class="card">
+          <span class="badge badge-free">Free</span>
+          <h3>Allowlist &amp; Deny</h3>
+          <p>Whitelist domains that break and add custom deny rules. Applied before blocklist matching.</p>
+        </article>
+        <article class="card">
+          <span class="badge badge-free">Free</span>
+          <h3>Activity Log</h3>
+          <p>Searchable on-device log of recent DNS queries (blocked and allowed). Export as CSV from Privacy Center.</p>
+        </article>
+        <article class="card">
+          <span class="badge badge-free">Free</span>
+          <h3>Optional DoH</h3>
+          <p>DNS-over-HTTPS to Cloudflare when enabled. No silent downgrade to plaintext when DoH is on. Default upstream: 1.1.1.1 UDP.</p>
+        </article>
+        <article class="card">
+          <span class="badge badge-pro">Pro</span>
+          <h3>Per-App Rules</h3>
+          <p>Bypass DNS filtering for one app or force-block all DNS per app — useful for banking apps or strict parental control.</p>
+        </article>
+        <article class="card">
+          <span class="badge badge-pro">Pro</span>
+          <h3>Schedules &amp; Network Rules</h3>
+          <p>Run protection only during set hours. Filter on Wi‑Fi only or mobile data only.</p>
+        </article>
+        <article class="card">
+          <span class="badge badge-pro">Pro</span>
+          <h3>Custom Blocklist URL</h3>
+          <p>Point the updater at your own HTTPS hosts-file list instead of the default feeds.</p>
+        </article>
+        <article class="card">
+          <span class="badge badge-free">Free</span>
+          <h3>Quick Settings Tile</h3>
+          <p>Toggle protection from the notification shade. Persistent notification with one-tap disconnect.</p>
+        </article>
       </div>
     </section>
 
-    <section id="engine" class="section engine">
+    <section id="pricing" class="section">
       <div class="section-head">
-        <p class="eyebrow">SYSTEM ARCHITECTURE</p>
-        <h2>Double-verification pipeline</h2>
+        <p class="eyebrow">FREE VS PRO</p>
+        <h2>Start free. Upgrade when you need control.</h2>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Free</h3>
+          <p class="price">$0</p>
+          <ul>
+            <li>Full DNS firewall</li>
+            <li>Ads / trackers / malware lists</li>
+            <li>All policy profiles</li>
+            <li>Allowlist &amp; custom deny</li>
+            <li>Activity log &amp; stats</li>
+            <li>Optional DoH</li>
+            <li>Quick Settings tile</li>
+            <li>Settings backup (JSON)</li>
+          </ul>
+        </div>
+        <div class="pricing-card pricing-card-pro">
+          <span class="badge badge-pro">Pro</span>
+          <h3>Lifetime</h3>
+          <p class="price">One-time purchase</p>
+          <ul>
+            <li>Everything in Free</li>
+            <li>Per-app bypass &amp; block</li>
+            <li>Scheduled protection</li>
+            <li>Wi‑Fi / mobile-only rules</li>
+            <li>Custom HTTPS blocklist URL</li>
+          </ul>
+          <p class="fine-print">Purchased via Google Play Billing. No subscription required.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section engine">
+      <div class="section-head">
+        <p class="eyebrow">HOW IT WORKS</p>
+        <h2>From DNS query to block or resolve</h2>
       </div>
       <div class="pipeline">
-        <div class="step"><span class="step-num">01</span><h4>Query Capture</h4><p>Android routes DNS to public resolver /32 into TUN.</p></div>
-        <div class="step"><span class="step-num">02</span><h4>Bloom Filter</h4><p>In-memory MurmurHash3 checks with microsecond response.</p></div>
-        <div class="step"><span class="step-num">03</span><h4>SQLite Confirm</h4><p>Room-indexed blocklist confirms positives before sinkhole.</p></div>
-        <div class="step"><span class="step-num">04</span><h4>Policy Engine</h4><p>Profile + reputation score + per-app context evaluation.</p></div>
-        <div class="step"><span class="step-num">05</span><h4>Upstream Resolve</h4><p>Protected UDP to 1.1.1.1 with Cloudflare DoH fallback.</p></div>
+        <div class="step"><span class="step-num">01</span><h4>Capture</h4><p>System DNS to 1.1.1.1 (or your resolver) is routed into the local TUN — UDP/53 only.</p></div>
+        <div class="step"><span class="step-num">02</span><h4>Bloom filter</h4><p>In-memory MurmurHash3 pre-check rejects most domains instantly.</p></div>
+        <div class="step"><span class="step-num">03</span><h4>SQLite confirm</h4><p>Room database verifies positives — no false blocks from bloom alone.</p></div>
+        <div class="step"><span class="step-num">04</span><h4>Policy &amp; rules</h4><p>Profile, risk score, per-app mode, schedule, and network rules evaluated.</p></div>
+        <div class="step"><span class="step-num">05</span><h4>Cache or upstream</h4><p>Allowed queries hit in-session TTL cache or resolve via UDP/DoH upstream.</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <p class="eyebrow">HONEST LIMITS</p>
+        <h2>What TrustPhone DNS is not</h2>
+      </div>
+      <div class="limits-grid">
+        <div class="limit-item"><strong>Not a full VPN</strong> — does not hide your IP or encrypt all traffic.</div>
+        <div class="limit-item"><strong>Not SafeSearch</strong> — does not rewrite Google/Bing results.</div>
+        <div class="limit-item"><strong>Not 100% ad-free</strong> — some in-app ads bypass DNS.</div>
+        <div class="limit-item"><strong>Not a parental guarantee</strong> — family profiles are best-effort.</div>
+        <div class="limit-item"><strong>Private DNS must be Off</strong> — on Samsung/Pixel, disable system Private DNS.</div>
+        <div class="limit-item"><strong>Lists need a download</strong> — first install uses a small starter list until you update.</div>
       </div>
     </section>
 
     <section id="privacy" class="section privacy">
       <div class="privacy-card">
-        <h2>Privacy by architecture — not by promise.</h2>
+        <h2>Privacy by design</h2>
         <ul>
-          <li>No DNS history uploaded to our servers</li>
-          <li>No HTTP payload inspection — DNS queries only</li>
-          <li>Telemetry is opt-in and aggregate-only</li>
-          <li>Open-source blocklists cached on device</li>
+          <li>DNS query logs stored in local Room SQLite — never uploaded</li>
+          <li>No HTTPS page inspection — DNS hostnames only</li>
+          <li>Firebase Analytics &amp; Crashlytics <strong>off by default</strong></li>
+          <li>Remote Config fetches resolver settings only — no DNS history sent</li>
+          <li>Android cloud backup disabled for app data</li>
+          <li>No account or sign-in required</li>
         </ul>
-        <a href="privacy.html" class="btn btn-ghost">Read privacy policy</a>
+        <a href="privacy.html" class="btn btn-ghost">Read full privacy policy</a>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="section-head">
+        <p class="eyebrow">FAQ</p>
+        <h2>Common questions</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Why does the app need VPN permission?</summary>
+          <p>Android only lets apps intercept DNS system-wide through VpnService. TrustPhone DNS routes a single resolver IP into a local tunnel — it does not send your traffic to a remote VPN server.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Will this block YouTube or in-app ads?</summary>
+          <p>It blocks many ad and tracker domains in browsers and some apps. Hardcoded or non-DNS ad delivery may still show. Per-app bypass (Pro) helps with apps that break.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Samsung sites won't load — what do I do?</summary>
+          <p>Go to Settings → Connections → More connection settings → Private DNS → set to <strong>Off</strong>. System Private DNS bypasses the app's filter.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is my data encrypted on the phone?</summary>
+          <p>Query logs use standard app sandbox storage, not SQLCipher. DNS can be encrypted in transit when you enable DoH in Settings.</p>
+        </details>
       </div>
     </section>
 
     <section id="download" class="section download">
       <div class="download-card">
-        <h2>Ready for field deployment</h2>
-        <p>Available on Google Play. On-device DNS firewall — no account required.</p>
+        <h2>Get TrustPhone DNS</h2>
+        <p>Version 3.0.1 · Android 8.0+ · Package <code>com.trustphone.dns</code></p>
         <div class="download-actions">
-          <a href="#" class="btn btn-primary">Google Play — Coming Soon</a>
+          <a href="#" class="btn btn-primary" id="play-link">Google Play — Coming Soon</a>
           <a href="mailto:support@trustphonedns.com" class="btn btn-ghost">Contact support</a>
         </div>
         <p class="fine-print">Set Samsung Private DNS to <strong>Off</strong> for best compatibility.</p>
@@ -119,7 +246,7 @@
   </main>
 
   <footer class="footer">
-    <p>© 2026 TrustPhone DNS · com.trustphone.dns · Built for Android 8.0+</p>
+    <p>© 2026 TrustPhone DNS · <a href="https://trustphonedns.com">trustphonedns.com</a> · <a href="privacy.html">Privacy</a> · v3.0.1</p>
   </footer>
 
   <script src="script.js"></script>

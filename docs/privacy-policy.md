@@ -84,4 +84,4 @@ We may update this policy. The date above will change when we do.
 
 ## Contact
 
-For privacy questions: [your-email@example.com]
+For privacy questions: support@trustphonedns.com

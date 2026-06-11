@@ -282,6 +282,115 @@ body {
 .download-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin: 1.25rem 0; }
 .fine-print { color: var(--muted); font-size: 0.85rem; }
 
+.section-sub { color: var(--muted); max-width: 60ch; margin-top: 0.5rem; }
+
+.badge {
+  display: inline-block;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  margin-bottom: 0.6rem;
+}
+.badge-free {
+  color: #4cff9a;
+  border: 1px solid rgba(76, 255, 154, 0.35);
+  background: rgba(76, 255, 154, 0.08);
+}
+.badge-pro {
+  color: #ffd54f;
+  border: 1px solid rgba(255, 213, 79, 0.35);
+  background: rgba(255, 213, 79, 0.08);
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+.pricing-card {
+  border: 1px solid var(--border);
+  background: var(--card);
+  padding: 1.75rem;
+  border-radius: 12px;
+}
+.pricing-card-pro {
+  border-color: rgba(255, 213, 79, 0.4);
+  box-shadow: 0 0 30px rgba(255, 213, 79, 0.08);
+}
+.pricing-card h3 {
+  font-family: 'Chakra Petch', sans-serif;
+  color: var(--cyan);
+  margin-bottom: 0.25rem;
+}
+.pricing-card .price {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 1.5rem;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+.pricing-card ul {
+  list-style: none;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+.pricing-card li {
+  padding: 0.35rem 0;
+  padding-left: 1.25rem;
+  position: relative;
+}
+.pricing-card li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--cyan);
+}
+
+.limits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 0.75rem;
+}
+.limit-item {
+  border: 1px solid var(--border);
+  background: rgba(14, 22, 34, 0.5);
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.limit-item strong { color: var(--text); }
+
+.faq-list { display: flex; flex-direction: column; gap: 0.5rem; }
+.faq-item {
+  border: 1px solid var(--border);
+  background: var(--card);
+  border-radius: 8px;
+  padding: 0.25rem 1.25rem;
+}
+.faq-item summary {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.85rem 0;
+  color: var(--text);
+  list-style: none;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item p {
+  color: var(--muted);
+  font-size: 0.92rem;
+  padding-bottom: 1rem;
+}
+
+.footer a { color: var(--cyan); text-decoration: none; }
+.footer a:hover { text-decoration: underline; }
+code {
+  font-family: 'Chakra Petch', monospace;
+  font-size: 0.85em;
+  color: var(--cyan);
+}
+
 .footer {
   border-top: 1px solid var(--border);
   padding: 2rem 1.5rem;
