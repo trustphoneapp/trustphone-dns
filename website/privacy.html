@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — TrustPhone DNS</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .legal { max-width: 720px; margin: 0 auto; padding: 3rem 1.5rem 5rem; }
+    .legal h1 { font-family: 'Chakra Petch', sans-serif; margin-bottom: 0.5rem; }
+    .legal .meta { color: var(--muted); margin-bottom: 2rem; font-size: 0.9rem; }
+    .legal h2 { font-family: 'Chakra Petch', sans-serif; margin: 2rem 0 0.75rem; color: var(--cyan); font-size: 1.1rem; }
+    .legal p, .legal li { color: var(--muted); margin-bottom: 0.75rem; }
+    .legal ul { margin-left: 1.25rem; }
+    .legal table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+    .legal th, .legal td { border: 1px solid var(--border); padding: 0.6rem; text-align: left; }
+    .legal th { color: var(--cyan); }
+    .legal a { color: var(--cyan); }
+  </style>
+</head>
+<body>
+  <div class="grid-bg" aria-hidden="true"></div>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">◆</span><span>TrustPhone <strong>DNS</strong></span></a>
+      <nav class="nav-links"><a href="index.html">Home</a></nav>
+    </div>
+  </header>
+  <main class="legal">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated: June 11, 2026 · App: TrustPhone DNS (<code>com.trustphone.dns</code>)</p>
+
+    <h2>Summary</h2>
+    <p>TrustPhone DNS is a local DNS blocker. It uses Android's VPN API to process DNS queries on your device. Your DNS queries and browsing history are <strong>never</strong> sent to our servers or sold, and we do not require an account. The only data that can leave your device is <strong>optional, off-by-default</strong> crash and usage diagnostics that you control.</p>
+
+    <h2>What TrustPhone DNS does</h2>
+    <ul>
+      <li>Intercepts DNS queries on your device via a local VPN tunnel</li>
+      <li>Matches domain names against on-device blocklists (ads, trackers, malware)</li>
+      <li>Forwards allowed queries to your chosen DNS resolver (e.g. Cloudflare)</li>
+      <li>Stores blocked-query logs and settings <strong>only on your device</strong></li>
+    </ul>
+
+    <h2>What we do NOT do</h2>
+    <ul>
+      <li>Inspect HTTPS page content</li>
+      <li>Log your browsing history to the cloud</li>
+      <li>Sell data to advertisers</li>
+      <li>Require an account</li>
+      <li>Collect analytics or crash data unless you explicitly opt in</li>
+    </ul>
+
+    <h2>Data stored on your device</h2>
+    <table>
+      <tr><th>Data</th><th>Purpose</th></tr>
+      <tr><td>Settings (allowlist, DNS choice)</td><td>App functionality</td></tr>
+      <tr><td>Blocked/allowed query log</td><td>Activity screen in the app</td></tr>
+      <tr><td>Per-app rules</td><td>Firewall features (Pro)</td></tr>
+    </table>
+    <p>This data is held in the app's private, sandboxed storage. It is excluded from Android cloud backup. You can clear app data at any time in Android Settings.</p>
+
+    <h2>Optional diagnostics (off by default)</h2>
+    <p>TrustPhone DNS includes Google Firebase <strong>Crashlytics</strong> and <strong>Analytics</strong>. Both are <strong>disabled by default</strong> and only activate if you turn on "Share anonymous telemetry" in Privacy Center. When enabled:</p>
+    <ul>
+      <li>Advertising ID (AAID) and SSAID collection remain disabled</li>
+      <li>We do not send DNS queries or query logs to analytics</li>
+      <li>Diagnostics are limited to crash stack traces and aggregate counts</li>
+    </ul>
+    <p>We also use Firebase <strong>Remote Config</strong> to deliver DNS resolver and blocklist configuration. Remote Config does not transmit app-supplied personal data.</p>
+
+    <h2>Permissions</h2>
+    <table>
+      <tr><th>Permission</th><th>Why</th></tr>
+      <tr><td>VPN</td><td>Required to filter DNS system-wide</td></tr>
+      <tr><td>Internet</td><td>Forward DNS to upstream resolver, update blocklists</td></tr>
+      <tr><td>Notifications</td><td>Show when protection is active</td></tr>
+      <tr><td>Boot completed</td><td>Optional auto-start</td></tr>
+    </table>
+
+    <h2>Third-party services</h2>
+    <ul>
+      <li><strong>Upstream DNS</strong> (e.g. Cloudflare 1.1.1.1): receives DNS queries you allow through</li>
+      <li><strong>Blocklist sources</strong>: public domain lists downloaded from the internet</li>
+      <li><strong>Google Firebase</strong> (Crashlytics, Analytics, Remote Config): see Optional diagnostics above</li>
+      <li><strong>Google Play Billing</strong>: processes Pro purchases through Google Play</li>
+    </ul>
+
+    <h2>Children's privacy</h2>
+    <p>TrustPhone DNS is not directed at children under 13. Family/Child profiles are tools for parents and provide best-effort category filtering, not a guarantee that all unsafe content is blocked.</p>
+
+    <h2>Contact</h2>
+    <p>Privacy questions: <a href="mailto:privacy@trustphone.dns">privacy@trustphone.dns</a></p>
+    <p><a href="index.html">← Back to TrustPhone DNS</a></p>
+  </main>
+</body>
+</html>

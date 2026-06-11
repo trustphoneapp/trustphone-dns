@@ -1,0 +1,16 @@
+{
+  "name": "shield-dns-precompiler",
+  "version": "1.0.0",
+  "description": "Pre-compiles blocklists and uploads them to Google Cloud Storage",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^7.11.2",
+    "axios": "^1.7.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

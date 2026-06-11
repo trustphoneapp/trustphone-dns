@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TrustPhone DNS</string>
+    <string name="vpn_session_name">TrustPhone DNS</string>
+    <string name="notification_title">TrustPhone DNS — Protected</string>
+    <string name="notification_text">DNS blocking is active on this device</string>
+    <string name="notification_subtext">Blocked today: %1$d</string>
+    <string name="notification_big_text">TrustPhone DNS is filtering ads, trackers, and malware at the DNS level. Blocked today: %1$d queries. Tap Disconnect to turn off protection.</string>
+    <string name="notification_disconnect">Disconnect</string>
+    <string name="quick_tile_label">TrustPhone DNS</string>
+</resources>

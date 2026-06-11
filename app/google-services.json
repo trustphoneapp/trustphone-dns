@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "867292262694",
+    "project_id": "trustphone-dns",
+    "storage_bucket": "trustphone-dns.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867292262694:android:2ca7cf4bf025bcfad4d1e7",
+        "android_client_info": {
+          "package_name": "com.trustphone.dns"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7z1HOQBhdaJN2b9A4N3Jtb4U5uyYytgc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
