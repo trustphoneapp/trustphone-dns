@@ -45,9 +45,7 @@ Tools
 dns, ad blocker, privacy, tracker blocker, malware, security, firewall
 
 ## Privacy policy URL
-Host `website/privacy.html` and paste the HTTPS URL here.
-
-Example: `https://YOUR_USERNAME.github.io/shield-dns/privacy.html`
+`https://trustphoneapp.github.io/trustphone-dns/privacy.html`
 
 ## Data safety (Play Console answers)
 

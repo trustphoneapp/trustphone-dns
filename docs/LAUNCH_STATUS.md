@@ -21,12 +21,12 @@
 |------|--------|
 | Upload keystore | Done — `upload-keystore.jks` (gitignored) |
 | Signed release AAB | Done |
-| Privacy policy (HTML) | Done — `website/privacy.html` |
+| Privacy policy (HTML) | Done — `docs/privacy.html` (GitHub Pages) |
 | Play listing copy | Done — `docs/PLAY_STORE_LISTING.md` |
 | Submission guide | Done — `docs/PLAY_STORE_SUBMISSION.md` |
 | Firebase consent (opt-in) | Done |
 | Stats counter (blocks only) | Done |
-| **Privacy policy hosted URL** | **You must deploy `website/`** |
+| **Privacy policy hosted URL** | Enable Pages → branch `main`, folder `/docs` |
 | **Play Console account ($25)** | **You must create** |
 | Screenshots (6) | **You must capture** |
 | In-app products in Console | **You must create** (IDs in listing doc) |
@@ -35,7 +35,7 @@
 ## Next steps (your actions)
 
 1. Pay $25 → [Play Console signup](https://play.google.com/console/signup)
-2. Host `website/` → get HTTPS privacy URL (GitHub Pages / Netlify)
+2. GitHub Pages → Settings → Pages → `main` branch → `/docs` folder
 3. Follow **`docs/PLAY_STORE_SUBMISSION.md`** step by step
 4. Upload `app-release.aab` to Internal testing
 5. Create Pro SKUs: `shield_dns_pro_lifetime`, `_monthly`, `_yearly`

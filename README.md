@@ -28,7 +28,7 @@ On-device DNS firewall for Android. Blocks ads, trackers, and malware at the DNS
 | [Play Store submission](docs/PLAY_STORE_SUBMISSION.md) | Step-by-step publish guide |
 | [Store listing copy](docs/PLAY_STORE_LISTING.md) | Descriptions + Data safety answers |
 | [Privacy policy](docs/privacy-policy.md) | Legal text |
-| [Website](website/) | Marketing site + hosted privacy page |
+| [Website](docs/index.html) | Marketing site (served via GitHub Pages `/docs`) |
 
 ## Privacy
 

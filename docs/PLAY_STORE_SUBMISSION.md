@@ -14,7 +14,7 @@
 | Google Play Developer account ($25 one-time) | You | [play.google.com/console/signup](https://play.google.com/console/signup) |
 | Signed release AAB | Ready | Rebuild after code changes: `./gradlew bundleRelease` |
 | Upload keystore | Ready | `upload-keystore.jks` — **back up securely; never commit** |
-| Privacy policy URL (public HTTPS) | Pending | Host `website/` (see Step 2) |
+| Privacy policy URL (public HTTPS) | Ready | GitHub Pages from `/docs` (see Step 2) |
 | 2+ screenshots (phone) | Pending | Capture from Samsung device |
 | Feature graphic (1024×500) | Optional | Can add later for production |
 
@@ -36,27 +36,20 @@
 
 Play requires a **public HTTPS URL**. Options:
 
-### Option A — GitHub Pages (free)
+### GitHub Pages (already set up)
 
-```bash
-cd ~/Projects/shield-dns
-git init
-git add website/ docs/privacy-policy.md .gitignore
-git commit -m "Add TrustPhone DNS marketing site and privacy policy"
-# Create repo on GitHub, push, enable Pages → /website folder
-# URL: https://YOUR_USERNAME.github.io/shield-dns/privacy.html
-```
+The marketing site lives in the **`/docs`** folder (GitHub Pages only supports `/` or `/docs`, not `/website`).
 
-### Option B — Netlify / Vercel
+1. Repo → **Settings** → **Pages**
+2. Source: **Deploy from a branch**
+3. Branch: **`main`** → folder **`/docs`**
+4. Save — wait 1–2 minutes
 
-Drag the `website/` folder to [netlify.com/drop](https://app.netlify.com/drop)  
-URL will be like `https://random-name.netlify.app/privacy.html`
+**Your URLs:**
+- Site: `https://trustphoneapp.github.io/trustphone-dns/`
+- Privacy policy: `https://trustphoneapp.github.io/trustphone-dns/privacy.html`
 
-### Option C — Your own domain
-
-Point `trustphone.dns` DNS to any static host; upload `website/` contents.
-
-**Paste this URL in Play Console → App content → Privacy policy**
+**Paste the privacy URL in Play Console → App content → Privacy policy**
 
 ---
 
