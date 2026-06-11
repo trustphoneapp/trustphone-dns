@@ -45,7 +45,7 @@ Tools
 dns, ad blocker, privacy, tracker blocker, malware, security, firewall
 
 ## Privacy policy URL
-`https://trustphonedns.app/privacy.html`
+`https://trustphonedns.com/privacy.html`
 
 ## Data safety (Play Console answers)
 

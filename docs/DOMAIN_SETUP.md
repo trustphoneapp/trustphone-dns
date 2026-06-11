@@ -1,17 +1,17 @@
 # Custom Domain Setup — Namecheap
 
-**Primary domain:** `trustphonedns.app`  
-**Also owned:** `trustphonedns.com`, `trustphonedns.org`
+**Primary domain:** `trustphonedns.com`  
+**Also owned:** `trustphonedns.app`, `trustphonedns.org`
 
 ## Recommended layout
 
 | Domain | Use |
 |--------|-----|
-| **trustphonedns.app** | Main site + Play Store privacy policy |
-| **trustphonedns.com** | Redirect → trustphonedns.app (optional) |
-| **trustphonedns.org** | Redirect → trustphonedns.app (optional) |
+| **trustphonedns.com** | Main website + Play Store privacy policy |
+| **trustphonedns.app** | Redirect → trustphonedns.com (optional) |
+| **trustphonedns.org** | Redirect → trustphonedns.com (optional) |
 
-**Play Store privacy URL:** `https://trustphonedns.app/privacy.html`
+**Play Store privacy URL:** `https://trustphonedns.com/privacy.html`
 
 ---
 
@@ -19,17 +19,17 @@
 
 1. Repo → [Settings → Pages](https://github.com/trustphoneapp/trustphone-dns/settings/pages)
 2. Branch: `main` → folder `/docs`
-3. Under **Custom domain**, enter: `trustphonedns.app`
+3. Under **Custom domain**, enter: `trustphonedns.com`
 4. Click **Save**
 5. Wait for DNS check, then enable **Enforce HTTPS**
 
-The `docs/CNAME` file in this repo already contains `trustphonedns.app`.
+The `docs/CNAME` file in this repo already contains `trustphonedns.com`.
 
 ---
 
-## Step 2 — Namecheap DNS for trustphonedns.app
+## Step 2 — Namecheap DNS for trustphonedns.com
 
-1. Namecheap → **Domain List** → **Manage** next to `trustphonedns.app`
+1. Namecheap → **Domain List** → **Manage** next to `trustphonedns.com`
 2. **Advanced DNS** tab
 3. Delete any conflicting A/CNAME records for `@` and `www`
 4. Add these records:
@@ -48,31 +48,26 @@ DNS can take **15 minutes to 48 hours** to propagate. GitHub will show a green c
 
 ---
 
-## Step 3 — Redirect .com and .org (optional)
+## Step 3 — Redirect .app and .org (optional)
 
-In Namecheap for **trustphonedns.com** and **trustphonedns.org**:
+In Namecheap for **trustphonedns.app** and **trustphonedns.org**:
 
 1. **Domain** tab → **Redirect Domain**
-2. Redirect to: `https://trustphonedns.app`
+2. Redirect to: `https://trustphonedns.com`
 3. Type: **Permanent (301)**
 
 Or use URL Redirect records in Advanced DNS:
 
 | Type | Host | Value |
 |------|------|-------|
-| URL Redirect | `@` | `https://trustphonedns.app` |
-| URL Redirect | `www` | `https://trustphonedns.app` |
+| URL Redirect | `@` | `https://trustphonedns.com` |
+| URL Redirect | `www` | `https://trustphonedns.com` |
 
 ---
 
 ## Step 4 — Email (optional)
 
-Set up `support@trustphonedns.app` in Namecheap → **Private Email** or forward to your Gmail:
-
-| Type | Host | Value |
-|------|------|-------|
-| CNAME | `mail` | (per Namecheap email setup) |
-| TXT | `@` | SPF record from Namecheap |
+Set up `support@trustphonedns.com` in Namecheap → **Private Email** or forward to your Gmail.
 
 ---
 
@@ -80,7 +75,7 @@ Set up `support@trustphonedns.app` in Namecheap → **Private Email** or forward
 
 | Page | URL |
 |------|-----|
-| Home | https://trustphonedns.app/ |
-| Privacy policy | https://trustphonedns.app/privacy.html |
+| Home | https://trustphonedns.com/ |
+| Privacy policy | https://trustphonedns.com/privacy.html |
 
 Use the privacy URL in **Play Console → App content → Privacy policy**.
